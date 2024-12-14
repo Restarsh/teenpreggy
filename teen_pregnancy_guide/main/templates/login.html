@@ -1,0 +1,33 @@
+<!-- templates/registration/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Teen Pregnancy Guide</title>
+</head>
+<body>
+    <header>
+        <h1>Login to Teen Pregnancy Guide</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resources/">Resources</a>
+            <a href="/consultation/">Consultation</a>
+            <a href="/forum/">Community Forum</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Teen Pregnancy Guide</p>
+    </footer>
+</body>
+</html>

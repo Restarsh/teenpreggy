@@ -1,0 +1,301 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #eb12a2;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-color: #ffebcd;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #eb12a2;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #eb12a2;
+}
+
+/* Resources Section */
+.resources {
+    padding: 30px 0;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.resources h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.resources ul {
+    list-style: none;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    color: #eb12a2;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-size: 1.5em;
+    color: #555;
+    border-left: 4px solid #eb12a2;
+    padding-left: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.testimonials footer {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #eb12a2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the Forum */
+.forum-intro, .new-post, .forum-posts {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+.new-post form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-post label {
+    font-weight: bold;
+}
+
+.new-post input, .new-post textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.new-post button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-post button:hover {
+    background-color: #45a049;
+}
+
+.forum-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forum-posts li {
+    margin-bottom: 15px;
+}
+
+.post-summary {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.post-summary h4 {
+    margin: 0;
+}
+
+.post-summary p {
+    color: #555;
+}
+
+.post-summary small {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Styling for the Register Page */
+.register {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.register h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.register p {
+    font-size: 14px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register label {
+    font-weight: bold;
+}
+
+.register input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register button:hover {
+    background-color: #45a049;
+}
+
+.register a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Resources section styling */
+.resources {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.resources h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+.resources a {
+    font-size: 18px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+

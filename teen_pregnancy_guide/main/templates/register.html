@@ -1,0 +1,28 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Register for Teen Pregnancy Guide</h1>
+    </header>
+
+    <section>
+        <h2>Register</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Teen Pregnancy Guide</p>
+    </footer>
+</body>
+</html>

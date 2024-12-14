@@ -1,0 +1,42 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Pregnancy Guide</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Teen Pregnancy Guide</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resources/">Resources</a>
+            <a href="/consultation/">Consultation</a>
+            <a href="/forum/">Community Forum</a>
+            <a href="/register/">Register</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to Your Guide</h2>
+        <p>We're here to provide you with the information, resources, and community support you need during this time.</p>
+    </section>
+
+    <section>
+        <h3>Latest Resources</h3>
+        <ul>
+            {% for resource in resources %}
+                <li><a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a></li>
+            {% empty %}
+                <li>No resources available.</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Teen Pregnancy Guide</p>
+    </footer>
+</body>
+</html>
